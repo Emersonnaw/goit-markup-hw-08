@@ -1,0 +1,29 @@
+.btn-hero {
+    padding: 10px 32px ;
+    width: 216px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+   
+    color:var(--contrast-color);
+    background-color:  var(--accent-color);
+    cursor: pointer;
+    
+    font-weight: 700;
+    font-size: 16px;
+    font-family:inherit;
+    line-height: calc(30/16);
+    text-align: center; 
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function:
+     cubic-bezier(0.4, 0, 0.2, 1);
+
+
+/* Effects hiro button */
+&:hover,
+&:focus {
+    background-color:var(--focus-btn-hero );
+}
+}

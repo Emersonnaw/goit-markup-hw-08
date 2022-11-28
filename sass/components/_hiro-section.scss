@@ -1,0 +1,44 @@
+.hero-section {
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    // height: 600px;
+
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+   
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hiro-img.jpg);
+    background-color:var( --bg-color-hiro);
+   
+    text-align: center;
+
+
+
+&__title {
+    width: 696px;
+    
+    color:var(--contrast-color);
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+&__title--margin {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+/* Hero button */
+&__flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}

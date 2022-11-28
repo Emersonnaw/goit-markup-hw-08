@@ -1,0 +1,56 @@
+.peculiarities {
+    background-color:var( --contrast-color) ;
+    padding-bottom: 0px;
+
+/* Benefits Flex */
+&__list {
+    display: flex;
+}
+
+&__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Icons for benefits */
+&__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    
+    background: var(--our-team-background);
+}
+
+&__icon--margin-bottom {
+    margin-bottom:30px ;
+}
+/* Benefits title style */
+&__title{
+    width: 270px;
+    
+    color:var(--main-color-text);
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+&__title--margin-bottom {
+    margin-bottom: 10px;
+}
+
+
+
+&__text {
+    width: 270px;
+    
+    color:var(--interactive-element-color);
+
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+}   
+}

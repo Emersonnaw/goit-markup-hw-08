@@ -1,0 +1,31 @@
+//utils styles
+@import './utils/variables';
+@import './utils/effects';
+//base styles
+
+@import './base/base';
+@import './base/reset';
+
+//components styles
+@import './components/container';
+@import './components/section';
+@import './components/header';
+@import './components/logo';
+@import './components/navigation';
+@import './components/contacts';
+@import './components/hiro-section';
+@import './components/btn-hero';
+@import './utils/visual-hidden';
+@import './components/peculiarities';
+@import './components/what-do-we-do';
+@import './components/our-tean';
+@import './components/regular-customers';
+@import './components/footer';
+@import './components/footer-logo';
+@import './components/address';
+@import './components/subscribe';
+@import './components/distribution-form';
+@import './components/modalwin';
+@import './components/portfolio-decor';
+@import './components/btn-portfolio';
+@import './components/examples-work';

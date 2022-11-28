@@ -1,0 +1,34 @@
+.address {
+    font-style: normal;
+
+
+&__link:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+&__footer {
+    color:var(--contrast-color);
+   
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__link-footer {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em; 
+    text-decoration: none;
+
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
