@@ -43,7 +43,7 @@
 
 /* drove line under links */
 
-    &__text&__text--active::after {
+.nav-links__text.nav-links__text--active::after {
     content: "";
     display: block;
     width: 100%;

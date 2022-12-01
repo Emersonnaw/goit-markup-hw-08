@@ -1,10 +1,10 @@
+.header__contacts {
+    margin-left: auto;  
+}
 .contacts {
     display: flex;
 
 
-.header__contacts {
-    margin-left: auto;  
-}
 
 &__links:not(:last-child){
     margin-right: 30px;

@@ -128,7 +128,7 @@ ul {
 .nav-links__text.nav-links__text--active {
   color: var(--accent-color);
 }
-.nav-links__text.nav-links__text--active::after {
+.nav-links .nav-links__text.nav-links__text--active::after {
   content: "";
   display: block;
   width: 100%;
@@ -140,20 +140,18 @@ ul {
   background-color: var(--accent-color);
 }
 
+.header__contacts {
+  margin-left: auto;
+}
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.header__contacts {
-  margin-left: auto;
-}
-
 .contacts__links:not(:last-child) {
   margin-right: 30px;
 }
-
 .contacts_text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,11 +170,9 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contacts__icon {
   fill: currentColor;
 }
-
 .contacts__icon--gap {
   margin-right: 10px;
 }
@@ -192,8 +188,8 @@ ul {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hiro-img.jpg);
   background-color: var(--bg-color-hiro);
   text-align: center;
+  /* Hero button */
 }
-
 .hero-section__title {
   width: 696px;
   color: var(--contrast-color);
@@ -204,14 +200,11 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
 .hero-section__title--margin {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
-
-/* Hero button */
 .hero-section__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,11 +238,9 @@ ul {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* Effects hiro button */
 }
-
-/* Effects hiro button */
-.btn-hero:hover,
-.btn-hero:focus {
+.btn-hero:hover, .btn-hero:focus {
   background-color: var(--focus-btn-hero);
 }
 
@@ -270,20 +261,18 @@ ul {
 .peculiarities {
   background-color: var(--contrast-color);
   padding-bottom: 0px;
+  /* Benefits Flex */
+  /* Icons for benefits */
+  /* Benefits title style */
 }
-
-/* Benefits Flex */
 .peculiarities__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .peculiarities__item:not(:last-child) {
   margin-right: 30px;
 }
-
-/* Icons for benefits */
 .peculiarities__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,12 +288,9 @@ ul {
   border-radius: 4px;
   background: var(--our-team-background);
 }
-
 .peculiarities__icon--margin-bottom {
   margin-bottom: 30px;
 }
-
-/* Benefits title style */
 .peculiarities__title {
   width: 270px;
   color: var(--main-color-text);
@@ -314,13 +300,10 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .peculiarities__title--margin-bottom {
   margin-bottom: 10px;
 }
-
-/*features -discription  */
-.peculiarities-text {
+.peculiarities__text {
   width: 270px;
   color: var(--interactive-element-color);
   line-height: 1.7142857143;
@@ -330,7 +313,6 @@ ul {
 .what-we-do {
   background-color: var(--contrast-color);
 }
-
 .what-we-do__title {
   color: var(--main-color-text);
   font-weight: 700;
@@ -339,29 +321,23 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 .what-we-do__title--margin {
   margin-bottom: 50px;
 }
-
 .what-we-do__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .what-we-do__items {
   position: relative;
 }
-
 .what-we-do__items--right:not(:last-child) {
   margin-right: 30px;
 }
-
 .what-we-do__img {
   display: block;
 }
-
 .what-we-do__blur {
   width: 370px;
   height: 70px;
@@ -371,7 +347,6 @@ ul {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8)));
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
 }
-
 .what-we-do__text {
   position: absolute;
   left: 50%;
@@ -503,7 +478,6 @@ ul {
   margin-right: auto;
   background-color: var(--contrast-color);
 }
-
 .regular-customers__title {
   margin-bottom: 50px;
   color: var(--main-color-text);
@@ -513,7 +487,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
 .regular-customers__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,7 +496,6 @@ ul {
           justify-content: center;
   gap: 30px;
 }
-
 .regular-customers__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,13 +518,10 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .regular-customers__logo {
   fill: currentColor;
 }
-
-.regular-customers__link:hover,
-.regular-customers__link:focus {
+.regular-customers__link:hover, .regular-customers__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
@@ -563,7 +532,6 @@ ul {
   background-color: var(--background-header-footer);
   text-align: left;
 }
-
 .footer_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,12 +541,10 @@ ul {
           align-items: baseline;
   gap: 70px;
 }
-
 .footer_logo {
   display: block;
   margin-bottom: 20px;
 }
-
 .footer__title {
   color: var(--contrast-color);
   font-style: normal;
@@ -588,11 +554,9 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .footer__title--margin-bottom {
   margin-bottom: 20px;
 }
-
 .footer__subscribe-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,16 +581,13 @@ ul {
 .address {
   font-style: normal;
 }
-
 .address__link:not(:last-child) {
   margin-bottom: 9px;
 }
-
-.addres__footer {
-  color: var(--contrast-color);
-  line-height: 1.7142857143;
+.address__footer {
   letter-spacing: 0.03em;
   text-decoration: none;
+  color: var(--contrast-color);
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 250ms;
@@ -634,7 +595,6 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .address__link-footer {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -649,7 +609,7 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-list__link {
+.subscribe-list .subscribe-list__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -673,13 +633,10 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .subscribe-list__icon {
   fill: currentColor;
 }
-
-.subscribe-list__link:hover,
-.subscribe-list__link:focus {
+.subscribe-list__link:hover, .subscribe-list__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -824,7 +781,6 @@ ul {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
