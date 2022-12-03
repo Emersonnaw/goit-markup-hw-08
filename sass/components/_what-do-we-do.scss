@@ -1,7 +1,10 @@
 .what-we-do {
     background-color:var( --contrast-color) ;
 
-
+@media screen and (max-width: 1199.98px) {
+    display: none;
+    
+}
 &__title {
     
     color:var(--main-color-text);

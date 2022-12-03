@@ -4,14 +4,27 @@
 
 
     &__logo {
-    padding-bottom: 25px;
-    padding-top: 24px;
-    margin-right: 93px;
+       
+        @media screen and (min-width:768px) {
+            margin-right: 88px;
+            padding-bottom: 26px;
+            padding-top: 26px;
+        }
+
+        @media screen and (min-width:1200px) {
+            margin-right: 93px;
+            padding-bottom: 25px;
+            padding-top: 24px;
+        }
     }
 
 
     &__site-nav {
-    display: flex;
+    display: none;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+    }
     }
 
     &__item:not(:last-child) {

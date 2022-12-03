@@ -1,9 +1,13 @@
 .header {   
     background-color:var(--contrast-color) ;
     border-bottom: 1px solid #ECECEC;
+
+    outline: 2px solid teal;
+    
 }
 
 .header__container {
     display: flex;
-    align-items: center;    
+    align-items: center; 
+       
 } 
