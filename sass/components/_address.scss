@@ -1,19 +1,46 @@
 .address {
     font-style: normal;
+    
 
+&__link {
+    display: flex;
+    justify-content: center;   
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width:1200px){
+        margin-left: 0px;
+        text-align: left;
+        justify-content: left;  
+    }
+   
+
+ }
 
 &__link:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
+    @media screen and (min-width:1200px){
+        margin-left: 0px;
+        text-align: left;  
+    }
 }
 
 &__footer {
+    font-family: 'Roboto';
     letter-spacing: 0.03em;
+    line-height: calc(16/14);
     text-decoration: none;
-    
+    text-align: center;
+
     color:var(--contrast-color);
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+}
+&__group {
+    margin-bottom: 60px;
 }
 
 &__link-footer {
@@ -22,6 +49,7 @@
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em; 
+    text-align: center;
     text-decoration: none;
 
     
