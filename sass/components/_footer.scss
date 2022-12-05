@@ -6,66 +6,106 @@
 
     text-align: left;
 
+    &__group {
+        
+        outline: 2px solid yellow;
+        outline-offset: -2px;
+        //table
+        @media screen and (min-width:768px){
+            margin-bottom: 60px;
+            margin-right: 165px;
+        }
+        //desctop
+        @media screen and (min-width:1200px){
+        margin-right: 94px;
+    }
+    }
 
 
-&_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-    gap: 70px;  
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        gap: 60px; 
+         
 
-
-
+     //table
+    @media screen and (min-width:768px){
+        gap: 0px;
+        
+    }    
+    //desctop
     @media screen and (min-width:1200px){
         flex-wrap: nowrap;
         justify-content: normal;
+        
+    }
+}
 
+&_icon {
+
+
+    outline: 2px solid yellow;
+
+    outline-offset: -2px;
+    // //table
+    // @media screen and (min-width:768px){
+        
+    // }
+
+    //desctop
+     @media screen and (min-width:1200px){
+       margin-right: 94px;
+        
     }
 }
 
 
 
+    &_logo {
+        display: flex;
+        justify-content: center;;
+        width: 154px;
+        margin-bottom: 28px;
+        margin-right: auto;
+        margin-left: auto;
+        
 
-&_logo {
-    display: flex;
-    justify-content: center;;
-    width: 154px;
-    margin-bottom: 28px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @media screen and (min-width:768px) {
-       
+        @media screen and (min-width:1200px) {
+            width: 145px;
+            margin-left: 0px;
+        }
     }
 
-    @media screen and (min-width:1200px) {
-        width: 145px;
-        margin-left: 0px;
+
+
+
+    &__title {
+        
+        color:var(--contrast-color);
+        
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+
+        // //table
+        // @media screen and (min-width:768px) {
+        //     text-align: center;
+        // }
+
     }
-}
 
+    &__title--margin-bottom {
+        margin-bottom: 20px;   
+    }
 
-
-
-&__title {
-    
-    color:var(--contrast-color);
-    
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-&__title--margin-bottom {
-    margin-bottom: 20px;   
-}
-
-&__subscribe-list {
-    display: flex;
-    gap: 10px;
-}
-}
+    &__subscribe-list {
+        display: flex;
+        gap: 10px;
+    }
+    }
