@@ -19,11 +19,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
-    min-width: 528px;
-    min-height: 581px;
+    width: 450px;
+    height: 609px;
     border-radius: 4px;
 
     background-color: var(--contrast-color);
+
+     // //table
+    // @media screen and (min-width:768px) {
+
+    // }
+    
+    //desctop
+    @media screen and (min-width:1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .close-btn {
@@ -65,9 +76,20 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23/20);
+    line-height: calc(30/20);
     text-align: center;
     letter-spacing: 0.03em;
+
+     // //table
+    // @media screen and (min-width:768px) {
+
+    // }
+    
+    //desctop
+    @media screen and (min-width:1200px) {
+        font-size: 20px;
+        line-height: calc(23/20);
+    }
 }
 
 .modal-field {
@@ -166,7 +188,7 @@ checked form modal */
     width: 425px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left:23px ;
@@ -181,6 +203,16 @@ checked form modal */
     
     color: var(--interactive-element-color);
     border-color: transparent;
+
+     // //table
+    // @media screen and (min-width:768px) {
+
+    // }
+    
+    //desctop
+    @media screen and (min-width:1200px) {
+        margin-bottom: 31px;
+   } 
 }
 
 .check-form {

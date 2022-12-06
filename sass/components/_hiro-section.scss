@@ -1,32 +1,96 @@
 .hero-section {
-    background-position: center;
     margin-left: auto;
     margin-right: auto;
     // height: 600px;
 
-    max-width: 1600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-   
-    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hiro-img.jpg);
-    background-color:var( --bg-color-hiro);
-   
+    max-width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
     text-align: center;
+
+
+    background-color:var( --bg-color-hiro);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    // background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    // url(../images/hiro-img.jpg);
+    
+    //mobile screen
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hiro/img_sm480x1.jpg);
+    
+    //mobile screen retina
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+       background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hiro/img_sm960x2.jpg); 
+    }
+    //table screen
+    @media screen and (min-width:481px) {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hiro/img_tabl768x1.jpg);
+    
+
+    //table screen retina
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+       background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hiro/img_tabl1536x2.jpg); 
+    }
+    }
+
+     //desctop screen
+    @media screen and (min-width:769px) {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hiro/img_desc1600x1.jpg);
+    
+
+    // //desctop screen retina
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+       background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hiro/img_desc3200x2.jpg); 
+    }
+    }   
+    
+    //table
+    @media screen and (min-width:768px) {
+        max-width: 768px;
+
+    }
+    
+    //desctop
+    @media screen and (min-width:1200px) {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 
 
 
 &__title {
-    width: 696px;
+    width: 360px;
     
     color:var(--contrast-color);
     
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
+    font-size: 26px;
+    line-height: calc(42/26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    // //table
+    // @media screen and (min-width:768px) {
+
+    // }
+    
+    //desctop
+     @media screen and (min-width:1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: calc(60/44);
+    }
 }
 
 &__title--margin {
