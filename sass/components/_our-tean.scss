@@ -4,24 +4,55 @@
 
 
 .our-team-title {
-    margin-bottom: 50px;
+    margin-bottom:30px;
     
     color:var(--main-color-text); 
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: calc(33/28);
     text-align: center;
     letter-spacing: 0.03em;
+
+    //table
+    @media screen and (min-width:768px) {
+        
+    }
+    
+    //desctop
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: calc(42/36);
+    }
+
 }
 
 /* description our team with social info and photo */
 .team-description {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
     gap: 30px;
-}
 
+    //table
+    @media screen and (min-width:768px) {
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+
+    }
+    
+    // //desctop
+    // @media screen and (min-width:1200px) {
+      
+    // }
+
+}
+.team-description:ntn-child(even){
+    
+}
 /* Background photo team */
 .background-photo {
     flex-basis: calc((100% - 30px * 3) /4 );
@@ -29,11 +60,19 @@
     border-radius: 0px 0px 4px 4px;
 
     background:var(--contrast-color);
+
+     
 }
 
 .img-team {
     display: block;
-}
+//     //table
+//     @media screen and (min-width:768px) {
+      
+        
+
+//     }
+// }
 
 .team-info {
     padding-top: 30px;
@@ -64,6 +103,7 @@
     line-height: calc(19/16); 
     text-align: center;
     letter-spacing: 0.03em;
+
 }
 
 
