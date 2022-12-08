@@ -133,6 +133,7 @@
   }
 
   .mobile-contact__mail {
+    
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -143,7 +144,9 @@
     
     text-decoration: none;
   }
-  
+  .mobile-contact--push {
+    margin-bottom: 64px;
+  }
 
   .mobile-contact__list {
     display: flex;
