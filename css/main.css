@@ -1468,15 +1468,23 @@ checked form modal */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 46px;
 }
-.filter-list:nth-child(3) {
-  margin-right: auto;
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .filter-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-list {
     margin-bottom: 50px;
   }
 }
@@ -1516,32 +1524,32 @@ checked form modal */
 
 /* give buttons paddings */
 .btn-all {
-  min-width: 67px;
-  min-height: 38px;
+  width: 67px;
+  height: 38px;
   padding: 6px 25px;
 }
 
 .btn-websites {
-  min-width: 125px;
-  min-height: 38px;
+  width: 125px;
+  height: 38px;
   padding: 6px 22px;
 }
 
 .btn-mods {
-  min-width: 112px;
-  min-height: 38px;
+  width: 112px;
+  height: 38px;
   padding: 6px 22px;
 }
 
 .btn-design {
-  min-width: 103px;
-  min-height: 38px;
+  width: 103px;
+  height: 38px;
   padding: 6px 22px;
 }
 
 .btn-market {
-  min-width: 130px;
-  min-height: 38px;
+  width: 130px;
+  height: 38px;
   padding: 6px 22px;
 }
 
@@ -1551,8 +1559,12 @@ checked form modal */
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
   color: var(--contrast-color);
+}
+@media screen and (min-width: 1200px) {
+  .project-background {
+    gap: 30px;
+  }
 }
 
 .projects-link {
@@ -1560,6 +1572,7 @@ checked form modal */
       flex-basis: calc((100% - 60px) / 3);
   -webkit-box-shadow: none;
           box-shadow: none;
+  width: 450px;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;

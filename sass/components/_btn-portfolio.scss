@@ -1,12 +1,22 @@
 .filter-list {
     display: flex;
+    flex-wrap: wrap;
+    gap:8px;
+    margin-bottom: 46px;
+    // &:nth-child(3){
+    //     margin-right: 100px;
+    // }
 
-    &:nth-child(3){
-        margin-right: auto;}
+    //tabl
+    @media screen and (min-width:768px) {
+       justify-content: center; 
+       flex-wrap: nowrap;
+       margin-bottom: 36px; 
+    }
     //desctop
     @media screen and (min-width:1200px) {
         
-        justify-content: center;
+        
         margin-bottom: 50px; 
     }
 }
@@ -47,31 +57,31 @@
 
 /* give buttons paddings */
 .btn-all {
-    min-width: 67px;
-    min-height: 38px;
+    width: 67px;
+    height: 38px;
     padding: 6px 25px;
 }
 
 .btn-websites {
-    min-width: 125px;
-    min-height: 38px;
+    width: 125px;
+    height: 38px;
     padding: 6px 22px;
 }
 
 .btn-mods {
-    min-width: 112px;
-    min-height: 38px;
+    width: 112px;
+    height: 38px;
     padding: 6px 22px;
 }
 
 .btn-design {
-    min-width:103px ;
-    min-height: 38px;
+    width:103px ;
+    height: 38px;
     padding:6px 22px ;
 }
 
 .btn-market {
-    min-width: 130px;
-    min-height: 38px;
+    width: 130px;
+    height: 38px;
     padding: 6px 22px;
 }
