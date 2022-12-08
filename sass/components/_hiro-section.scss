@@ -80,10 +80,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-   //table
-    // @media screen and (min-width:768px) {
-
-    // }
+   //mobile
+    @media screen and (min-width:419.98px) {
+        min-width: 360px;
+    }
     
     //desctop
      @media screen and (min-width:1200px) {
