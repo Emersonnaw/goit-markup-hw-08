@@ -62,7 +62,7 @@
 
 &__input {
     padding-left: 16px;
-    min-width: 450px;
+   width: auto;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -78,11 +78,11 @@
     line-height: calc(20/16);
     letter-spacing: 0.03em;
 
-    // //table
-    // @media screen and (min-width:768px) {
-        
+     //mobile
+    @media screen and (min-width:479.98px) {
+        min-width: 450px;
        
-    // }
+    }
     //desctop
     @media screen and (min-width:1200px){
         min-width: 358px;

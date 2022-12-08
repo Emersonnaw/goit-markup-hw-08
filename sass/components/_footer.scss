@@ -23,12 +23,17 @@
 
 
     &_container {
+       margin-left: auto;
+       margin-right: auto;
+        gap: 60px; 
+     //table
+     @media screen and (min-width:479.98px){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: baseline;
-        gap: 60px; 
-         
+        
+    }         
 
      //table
     @media screen and (min-width:768px){
@@ -106,6 +111,15 @@
 
     &__subscribe-list {
         display: flex;
-        gap: 10px;
+            gap: 10px;
+        justify-content: center;
+         @media screen and (max-width:479.98px) {
+            margin-bottom: 60px;
+        }
+
+        //  //table
+        // @media screen and (min-width:480px) {
+            
+        //  }
     }
     }

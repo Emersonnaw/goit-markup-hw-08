@@ -49,11 +49,6 @@ ul {
   margin-right: auto;
   outline: 1px solid tomato;
 }
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -819,18 +814,24 @@ ul {
   }
 }
 .footer_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
   gap: 60px;
+}
+@media screen and (min-width: 479.98px) {
+  .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer_container {
@@ -887,6 +888,14 @@ ul {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (max-width: 479.98px) {
+  .footer__subscribe-list {
+    margin-bottom: 60px;
+  }
 }
 
 .logo__studio--white {
@@ -906,15 +915,25 @@ ul {
 .address {
   font-style: normal;
 }
+@media screen and (max-width: 479.98px) {
+  .address__list {
+    margin-bottom: 60px;
+  }
+}
 .address__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
+}
+@media screen and (min-width: 479.98px) {
+  .address__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .address__link {
@@ -1065,7 +1084,7 @@ ul {
 }
 .form-field__input {
   padding-left: 16px;
-  min-width: 450px;
+  width: auto;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1078,6 +1097,11 @@ ul {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 479.98px) {
+  .form-field__input {
+    min-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-field__input {

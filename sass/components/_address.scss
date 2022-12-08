@@ -1,12 +1,22 @@
 .address {
     font-style: normal;
-    
+
+&__list {
+    @media screen and(max-width:479.98px){
+        margin-bottom: 60px;
+    }
+}   
 
 &__link {
-    display: flex;
-    justify-content: center;   
+      
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
+
+    @media screen and (min-width:479.98px){ 
+        display: flex;
+        justify-content: center;
+    }
 
     @media screen and (min-width:1200px){
         margin-left: 0px;
@@ -49,10 +59,11 @@
     letter-spacing: 0.03em; 
     text-align: center;
     text-decoration: none;
-
+     
     
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 }
