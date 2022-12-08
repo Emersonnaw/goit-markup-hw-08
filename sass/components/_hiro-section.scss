@@ -28,7 +28,7 @@
        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hiro/img_sm960x2.jpg); 
     }
     //table screen
-    @media screen and (min-width:481px) {
+    @media screen and (min-width:480px) {
         background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hiro/img_tabl768x1.jpg);
     
 
@@ -41,7 +41,7 @@
     }
 
      //desctop screen
-    @media screen and (min-width:769px) {
+    @media screen and (min-width:768px) {
         background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hiro/img_desc1600x1.jpg);
     
 
