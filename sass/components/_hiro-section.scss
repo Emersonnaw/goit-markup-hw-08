@@ -69,7 +69,7 @@
 
 
 &__title {
-    min-width: 360px;
+    min-width: auto;
     
     color:var(--contrast-color);
     
@@ -80,7 +80,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    // //table
+   //table
     // @media screen and (min-width:768px) {
 
     // }
