@@ -39,14 +39,14 @@
             </nav>
             <ul class="contacts header__contacts">
                 <li class="contacts__links">
-                    <a href="mailto:info@devstudio.com" class=" link contacts_text">
+                    <a href="mailto:info@devstudio.com" class=" link contacts__text">
                         <svg class="contacts__icon contacts__icon--gap" width = "16" height ="12" >
                              <use href ="./images/nav-social-sprite.svg#icon-envelope" ></use>
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="contacts__links"><a href="tel:+380961111111"  class=" link contacts_text">
+                <li class="contacts__links"><a href="tel:+380961111111"  class=" link contacts__text">
                         <svg class="contacts__icon contacts__icon--gap " width = "10" height ="16" >
                               <use href ="./images/nav-social-sprite.svg#icon-smartphone" ></use>
                         </svg>
@@ -55,6 +55,16 @@
                 </li>
                
             </ul>
+            <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="burger-icon" width ="40" height="40" >
+                <use  href ="images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+        </div>    
    </header> 
     <main>
         <section class="section-portfolio back-portfolio">
@@ -286,7 +296,7 @@
     </main>
     <footer class="footer">
         <div class="container  footer_container">
-            <div>
+            <div class="footer__group">
                 <a href="./index.html" class=" logo footer_logo ">
                     <span class="logo__web">Web</span><span class="logo__studio logo__studio--white">Studio</span> 
                 </a>
@@ -298,7 +308,7 @@
                         </ul>        
                     </address>
             </div>
-            <div>
+            <div class="footer_icon">
                 <p class="footer__title footer__title--margin-bottom">приєднуйтесь</p>
                 <ul class="subscribe-list footer__subscribe-list ">
                       <!-- Instagram icon -->
@@ -363,7 +373,7 @@
                 <p class="form-field__title title--margin-bottom">Підпишіться на розсилку</p>
                 <label class="form-label">        
                     <input 
-                         class="form-field__input input--margin-right"
+                         class="form-field__input form-field__input--margin"
                          type="email"
                          name="subscribe-field"
                          placeholder="E-mail">

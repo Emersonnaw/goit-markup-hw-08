@@ -102,13 +102,22 @@
 
     color: #212121;
     text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function:
+    cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .mobile-contact {
     display: flex;
     gap: 32px;
     flex-direction: column;
-    margin-bottom: 64px;
+    margin-top: 306px;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 
   .mobile-contact__tel {

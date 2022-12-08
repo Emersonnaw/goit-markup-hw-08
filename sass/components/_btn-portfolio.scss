@@ -1,7 +1,14 @@
 .filter-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;   
+
+    &:nth-child(3){
+        margin-right: auto;}
+    //desctop
+    @media screen and (min-width:1200px) {
+        
+        justify-content: center;
+        margin-bottom: 50px; 
+    }
 }
 
 .button-list:not(:last-child) {
@@ -40,26 +47,31 @@
 
 /* give buttons paddings */
 .btn-all {
-    min-width: 25px;
+    min-width: 67px;
+    min-height: 38px;
     padding: 6px 25px;
 }
 
 .btn-websites {
-    min-width: 81px;
+    min-width: 125px;
+    min-height: 38px;
     padding: 6px 22px;
 }
 
 .btn-mods {
-    min-width: 68px;
+    min-width: 112px;
+    min-height: 38px;
     padding: 6px 22px;
 }
 
 .btn-design {
-    min-width:59px ;
+    min-width:103px ;
+    min-height: 38px;
     padding:6px 22px ;
 }
 
 .btn-market {
-    min-width: 86px;
+    min-width: 130px;
+    min-height: 38px;
     padding: 6px 22px;
 }

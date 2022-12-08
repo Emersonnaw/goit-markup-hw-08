@@ -32,27 +32,30 @@
 /* description our team with social info and photo */
 .team-description {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
 
     //table
     @media screen and (min-width:768px) {
-        flex-wrap: wrap;
+        // flex-wrap:wrap;
         flex-direction: row;
+        
         
 
     }
     
     // //desctop
-    // @media screen and (min-width:1200px) {
-      
-    // }
+   //desctop
+   @media screen and (min-width:1200px) {
+    flex-wrap: nowrap;
+}
+
 
 }
-.team-description:ntn-child(even){
+// .team-description:ntn-child(even){
     
-}
+// }
 /* Background photo team */
 .background-photo {
     flex-basis: calc((100% - 30px * 3) /4 );
@@ -60,8 +63,17 @@
     border-radius: 0px 0px 4px 4px;
 
     background:var(--contrast-color);
+  //table
+    @media screen and (min-width:768px) {
+      min-width:354px;
+        
 
-     
+    }
+    @media screen and (min-width:1200px) {
+        min-width: 270px;
+          
+  
+      }
 }
 
 .img-team {
@@ -72,7 +84,7 @@
         
 
 //     }
-// }
+ }
 
 .team-info {
     padding-top: 30px;
