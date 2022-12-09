@@ -823,6 +823,8 @@ ul {
   margin-left: auto;
   margin-right: auto;
   gap: 60px;
+  outline: 2px solid teal;
+  outline-offset: -2px;
 }
 @media screen and (min-width: 479.98px) {
   .footer_container {
@@ -853,6 +855,10 @@ ul {
         -ms-flex-pack: normal;
             justify-content: normal;
   }
+}
+.footer_icon {
+  outline: 2px solid blue;
+  outline-offset: -2px;
 }
 @media screen and (min-width: 1200px) {
   .footer_icon {
@@ -1014,6 +1020,10 @@ ul {
   background-color: var(--accent-color);
 }
 
+.form-field {
+  outline: 2px solid rgb(132, 1, 121);
+  outline-offset: -2px;
+}
 @media screen and (min-width: 768px) {
   .form-field {
     display: -webkit-box;
@@ -1057,6 +1067,8 @@ ul {
   margin-bottom: 20px;
 }
 .form-field .form-label {
+  outline: 2px solid tomato;
+  outline-offset: -2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1088,6 +1100,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .form-field .form-label {
+    width: 358px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1112,7 +1125,7 @@ ul {
 }
 @media screen and (min-width: 480px) {
   .form-field__input {
-    width: 100%;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1189,7 +1202,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   margin-left: auto;
   margin-right: auto;
