@@ -23,13 +23,13 @@
 
 
     &_container {
+        // outline: 2px solid teal;
+        // outline-offset: -2px;
         display: flex;
         flex-direction: column;
          margin-left: auto;
          margin-right: auto;
         gap: 60px; 
-        outline: 2px solid teal;
-        outline-offset: -2px;
      //table
      @media screen and (min-width:479.98px){
         flex-direction: row;
@@ -53,8 +53,8 @@
 }
 
 &_icon {
-    outline: 2px solid blue;
-        outline-offset: -2px;
+    // outline: 2px solid blue;
+    //     outline-offset: -2px;
 
     
     // //table

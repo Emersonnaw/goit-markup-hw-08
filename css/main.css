@@ -823,8 +823,6 @@ ul {
   margin-left: auto;
   margin-right: auto;
   gap: 60px;
-  outline: 2px solid teal;
-  outline-offset: -2px;
 }
 @media screen and (min-width: 479.98px) {
   .footer_container {
@@ -855,10 +853,6 @@ ul {
         -ms-flex-pack: normal;
             justify-content: normal;
   }
-}
-.footer_icon {
-  outline: 2px solid blue;
-  outline-offset: -2px;
 }
 @media screen and (min-width: 1200px) {
   .footer_icon {
@@ -1021,8 +1015,8 @@ ul {
 }
 
 .form-field {
-  outline: 2px solid rgb(132, 1, 121);
-  outline-offset: -2px;
+  max-width: 570px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .form-field {
@@ -1067,8 +1061,6 @@ ul {
   margin-bottom: 20px;
 }
 .form-field .form-label {
-  outline: 2px solid tomato;
-  outline-offset: -2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1080,16 +1072,6 @@ ul {
 @media screen and (min-width: 480px) {
   .form-field .form-label {
     width: 450px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .form-field .form-label {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1139,6 +1121,7 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .form-field__input--margin {
+    margin-left: 205px;
     margin-right: 12px;
     margin-bottom: 0px;
   }
