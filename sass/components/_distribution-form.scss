@@ -45,6 +45,7 @@
 .form-label {
     display:flex;
     flex-direction: column;
+
     //table
     @media screen and (min-width:768px) {
         
@@ -62,7 +63,8 @@
 
 &__input {
     padding-left: 16px;
-   width: auto;
+   
+    width: auto;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -79,7 +81,7 @@
     letter-spacing: 0.03em;
 
      //mobile
-    @media screen and (min-width:479.98px) {
+    @media screen and (min-width:480px) {
         min-width: 450px;
        
     }
